@@ -1,0 +1,17 @@
+Celem zadania jest napisanie prostego programu w języku C oraz funkcji w języku
+asemblera. Wykorzystując wiedzę o sposobie wywoływania funkcji w C, będziemy
+wywoływać funkcję(napisaną w asemblerze) w naszym programie(napisanym w C).
+
+Polecenia:
+
+1) W pliku “main.c” zadeklaruj funkcję o nazwie suma. Ma ona dwa argumenty: int
+   rozmiar, int* tablica. Zwraca sumę tablicy: int.(Tylko deklaracja)
+2) W pliku “suma.asm” należy uzupełnić kod funkcji. Przerób kod z zadania 2(rozmiar i
+   wskaźnik na tablicę będą odpowiednio w rejestrach - rdi, rsi)
+3) Dodaj do funkcji main z pliku “main.c” przykładowy kod testujący napisaną funkcję
+4) Użyj gotowego Makefile do kompilacji
+5) Sprawdź jak wygląda kod Twojej funkcji podczas deasemblacji pliku wykonywalnego
+   (polecenie “make deasemblacja”)
+6) Dodatkowo możesz zdefiniować daną funkcję “suma” w języku C i wtedy dokonać
+   deasemblacji(zobaczyć jaki kod asemblera wygenerował kompilator). Idąc dalej
+   można ustawić flagę optymalizacji i zobaczyć jak kod funkcji się zmienia.
